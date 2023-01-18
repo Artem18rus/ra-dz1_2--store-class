@@ -4,6 +4,8 @@ import UserModel from '../models/UserModel';
 
 class ShopItemClass extends React.Component {
   render() {
+    console.log(this.props)
+    const { item } = this.props;
     return(
       <div className="main-content">
         <h2>Tiger of Sweden</h2>
@@ -24,7 +26,7 @@ class ShopItemClass extends React.Component {
 }
 
 ShopItemClass.propTypes = {
-  user: PropTypes.instanceOf(UserModel).isRequired
+  item: PropTypes.instanceOf(UserModel).isRequired
 }
 
 export default ShopItemClass;
